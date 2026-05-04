@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)file:///C:/Users/LuisJoseMarcanoMenen/Downloads/china_reise_2026_3.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>China Reise 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./ChinaReise2026_files/css2" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080F0A;--bg2:#0D1610;--bg3:#121E14;--surface:#172019;
+  --border:rgba(74,200,120,0.1);--border2:rgba(74,200,120,0.22);
+  --text:#E8F2EA;--muted:#7A9E82;--faint:#2E4A34;
+  --g1:#4AC878;--g1-dim:rgba(74,200,120,0.12);
+  --g2:#2D8A50;--g3:#1A5C33;--g4:#0F3D22;
+  --gold:#C8A84A;--gold-dim:rgba(200,168,74,0.12);
+  --teal:#3ABFA0;--teal-dim:rgba(58,191,160,0.12);
+  --moss:#8AB87A;--moss-dim:rgba(138,184,122,0.12);
+  --coral:#D07860;--coral-dim:rgba(208,120,96,0.12);
+  --violet:#8878D8;--violet-dim:rgba(136,120,216,0.12);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Instrument Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6;min-height:100vh;overflow-x:hidden;}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px 48px;position:relative;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 75% 15%,rgba(45,138,80,0.18) 0%,transparent 55%),radial-gradient(ellipse 50% 50% at 5% 75%,rgba(74,200,120,0.08) 0%,transparent 55%);}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(74,200,120,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(74,200,120,0.04) 1px,transparent 1px);background-size:80px 80px;}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(74,200,120,0.07) 1px,transparent 1px);background-size:32px 32px;background-position:16px 16px;}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1;width:100%;}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--g1);margin-bottom:28px;}
+.eyebrow-line{width:36px;height:1px;background:linear-gradient(90deg,var(--g1),transparent);}
+h1{font-family:'Syne',sans-serif;font-size:clamp(48px,7vw,90px);font-weight:800;line-height:0.92;letter-spacing:-0.03em;margin-bottom:32px;}
+h1 .dim{color:var(--faint);}
+h1 .accent{color:var(--g1);text-shadow:0 0 60px rgba(74,200,120,0.3);}
+h1 .white{color:var(--text);}
+.hero-meta{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:52px;}
+.meta-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);}
+.meta-dot{width:5px;height:5px;border-radius:50%;background:var(--g1);box-shadow:0 0 8px rgba(74,200,120,0.5);}
+
+/* ── HERO NAV BUTTONS ── */
+.hero-stats-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;}
+.hstat-pill{background:rgba(74,200,120,0.06);border:1px solid rgba(74,200,120,0.15);border-radius:10px;padding:10px 18px;display:flex;flex-direction:column;gap:2px;}
+.hstat-val{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--g1);line-height:1;letter-spacing:-0.02em;}
+.hstat-lbl{font-size:10px;color:var(--muted);font-weight:500;text-transform:uppercase;letter-spacing:0.06em;}
+.hero-tabs{display:flex;gap:10px;flex-wrap:wrap;}
+.hero-tab{display:flex;align-items:center;gap:10px;padding:11px 20px;border-radius:40px;cursor:pointer;text-decoration:none;font-size:13px;font-weight:500;font-family:'Instrument Sans',sans-serif;transition:all 0.25s;border:1px solid var(--border);color:var(--muted);background:var(--bg3);}
+.hero-tab:hover{border-color:var(--g1);background:var(--g1-dim);transform:translateY(-2px);box-shadow:0 8px 24px rgba(74,200,120,0.12);color:var(--text);}
+.hero-tab.active{border-color:var(--g1);background:var(--g1-dim);color:var(--g1);}
+.ht-label{font-size:10px;color:var(--muted);display:block;}
+.ht-name{display:block;font-weight:500;}
+
+/* ── STICKY NAV ── */
+.sticky-nav{position:sticky;top:0;z-index:200;background:rgba(8,15,10,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:6px;overflow-x:auto;padding:10px 48px;}
+.nav-inner::-webkit-scrollbar{display:none;}
+.nav-logo{font-family:'Syne',sans-serif;font-size:13px;font-weight:800;color:var(--g1);margin-right:16px;flex-shrink:0;letter-spacing:-0.01em;}
+.nav-btn{display:flex;align-items:center;gap:6px;padding:7px 16px;border-radius:24px;cursor:pointer;font-size:12px;font-weight:500;font-family:'Instrument Sans',sans-serif;border:1px solid transparent;color:var(--muted);transition:all 0.15s;white-space:nowrap;background:none;}
+.nav-btn:hover{color:var(--text);background:var(--bg3);border-color:var(--border);}
+.nav-btn.active{color:var(--g1);background:var(--g1-dim);border-color:rgba(74,200,120,0.3);}
+
+/* ── PAGES ── */
+.page{display:none;}.page.active{display:block;}
+.sections{max-width:1100px;margin:0 auto;padding:0 48px 100px;}
+
+/* ── PAGE HEADER ── */
+.page-hdr{padding:56px 0 36px;border-bottom:1px solid var(--border);margin-bottom:44px;}
+.page-hdr-label{font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.page-hdr-title{font-family:'Syne',sans-serif;font-size:clamp(30px,4vw,48px);font-weight:800;letter-spacing:-0.025em;line-height:1;color:var(--text);margin-bottom:8px;}
+.page-hdr-title .acc{color:var(--g1);}
+.page-hdr-sub{font-size:14px;color:var(--muted);}
+
+/* ── ROUTE BAR ── */
+.route-bar{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:28px 32px;margin-bottom:28px;position:relative;overflow:hidden;}
+.route-bar::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--g2),var(--g1),var(--g2),transparent);}
+.route-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:22px;}
+.route-steps{display:flex;align-items:center;flex-wrap:wrap;gap:0;}
+.rs{text-align:center;padding:0 4px;}
+.rs-flag{font-size:16px;margin-bottom:2px;}
+.rs-city{font-size:12px;font-weight:600;color:var(--text);}
+.rs-date{font-size:10px;color:var(--faint);}
+.rs-arr{display:flex;flex-direction:column;align-items:center;padding:0 10px;color:var(--g2);font-size:14px;}
+.rs-dist{font-size:9px;color:var(--faint);}
+
+/* ── STOP CARDS (Plan de Viaje) ── */
+.stop-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:12px;transition:all 0.2s;}
+.stop-card:hover{border-color:var(--border2);box-shadow:0 4px 24px rgba(0,0,0,0.25);transform:translateY(-1px);}
+.stop-card.open{transform:none;box-shadow:none;}
+.stop-card:hover{border-color:var(--border2);}
+.stop-head{display:flex;align-items:stretch;cursor:pointer;}
+.stop-accent{width:4px;flex-shrink:0;}
+.stop-badge{width:60px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 8px;border-right:1px solid var(--border);}
+.stop-num{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;line-height:1;}
+.stop-flag{font-size:15px;margin-top:3px;}
+.stop-main{flex:1;padding:16px 20px;}
+.stop-name{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:3px;}
+.stop-sub{font-size:12px;color:var(--muted);}
+.stop-meta{display:flex;align-items:center;gap:8px;margin-top:6px;}
+.date-pill{font-size:11px;padding:3px 10px;border-radius:16px;font-weight:500;}
+.stop-right{padding:14px 18px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:4px;flex-shrink:0;}
+.nights-val{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;}
+.nights-lbl{font-size:10px;color:var(--muted);}
+.chevron{width:16px;height:16px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(45deg);transition:transform 0.25s;margin-top:4px;}
+.click-hint{font-size:10px;color:var(--faint);letter-spacing:0.06em;text-transform:uppercase;font-weight:500;margin-bottom:4px;transition:color 0.2s;}
+.stop-card:hover .click-hint,.day-card:hover .click-hint{color:var(--muted);}
+.stop-card.open .click-hint,.day-card.open .click-hint{display:none;}
+.stop-card.open .chevron{transform:rotate(-135deg);margin-top:-4px;}
+.stop-body{display:none;padding:22px;border-top:1px solid var(--border);}
+.stop-card.open .stop-body{display:block;}
+.stop-body{animation:fadeUp 0.3s ease both;}
+@keyframes bodyFade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.stop-card.open .stop-body{animation:bodyFade 0.25s ease both;}
+.day-card.open .day-body{animation:bodyFade 0.25s ease both;}
+
+/* ── CARDS GRID ── */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-bottom:12px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;transition:border-color 0.2s;}
+.card:hover{border-color:var(--border2);}
+.card-icon{font-size:18px;margin-bottom:8px;}
+.card-title{font-size:13px;font-weight:600;margin-bottom:4px;color:var(--text);}
+.card-desc{font-size:12px;color:var(--muted);line-height:1.55;}
+.card-tag{display:inline-block;margin-top:8px;font-size:10px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:10px;}
+
+/* ── WANDER CARDS ── */
+.wander-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-bottom:12px;}
+.wander-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;position:relative;transition:border-color 0.2s;}
+.wander-card:hover{border-color:var(--border2);}
+.wander-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px;padding-right:52px;}
+.wander-stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:5px;}
+.wstat{font-size:11px;color:var(--muted);}
+.wander-desc{font-size:12px;color:var(--muted);line-height:1.5;}
+.diff{position:absolute;top:12px;right:12px;font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;}
+.easy{background:var(--g1-dim);color:var(--g1);}
+.mid{background:var(--gold-dim);color:var(--gold);}
+.hard{background:var(--coral-dim);color:var(--coral);}
+.rest{background:var(--teal-dim);color:var(--teal);}
+
+/* ── CAR NOTE ── */
+.car-note{background:var(--bg3);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:12px 16px;font-size:13px;color:var(--muted);line-height:1.6;margin-top:8px;}
+.car-note strong{color:var(--text);font-weight:500;}
+
+/* ── SUBHEAD ── */
+.sub-title{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--moss);margin:18px 0 10px;display:flex;align-items:center;gap:10px;}
+.sub-title::after{content:'';flex:1;height:1px;background:var(--border);}
+
+/* ── DIVIDER ── */
+.divider{border:none;border-top:1px solid var(--border);margin:52px 0 0;}
+
+/* ── REGION HEADER ── */
+.region-hdr{display:flex;align-items:flex-end;gap:16px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border);}
+.region-num{font-family:'Syne',sans-serif;font-size:60px;font-weight:800;line-height:1;color:var(--faint);letter-spacing:-0.04em;flex-shrink:0;}
+.region-lbl{font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;}
+.region-name{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1;}
+.region-dates{font-size:13px;color:var(--muted);margin-top:4px;}
+
+/* ── DAY CARDS ── */
+.day-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:12px;transition:all 0.2s;}
+.day-card:hover{border-color:var(--border2);box-shadow:0 4px 24px rgba(0,0,0,0.25);transform:translateY(-1px);}
+.day-card.open{transform:none;box-shadow:none;}
+.day-card:hover{border-color:var(--border2);}
+.day-head{display:flex;align-items:stretch;cursor:pointer;}
+.day-date-col{width:66px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 6px;border-right:1px solid var(--border);text-align:center;}
+.day-dow{font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);}
+.day-num{font-family:'Syne',sans-serif;font-size:28px;font-weight:800;color:var(--text);line-height:1;}
+.day-mon{font-size:10px;color:var(--muted);}
+.day-main-col{flex:1;padding:16px 20px;}
+.day-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:3px;}
+.day-sub{font-size:12px;color:var(--muted);}
+.day-right-col{padding:14px 18px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:6px;flex-shrink:0;}
+.diff-pill{font-size:10px;font-weight:600;padding:3px 10px;border-radius:16px;white-space:nowrap;}
+.day-body{display:none;padding:22px;border-top:1px solid var(--border);}
+.day-card.open .day-body{display:block;}
+.day-card.open .chevron{transform:rotate(-135deg);margin-top:-4px;}
+
+/* ── STATS BAR ── */
+.stats-bar{display:flex;gap:0;border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:16px;}
+.sbar-item{flex:1;padding:12px;text-align:center;border-right:1px solid var(--border);}
+.sbar-item:last-child{border-right:none;}
+.sbar-val{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--g1);line-height:1;}
+.sbar-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:2px;}
+
+/* ── HIKE DESC ── */
+.hike-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:16px;}
+
+/* ── TIPS 2-COL ── */
+.tips-2col{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
+.tip-sm{background:var(--surface);border-radius:8px;padding:10px 12px;}
+.tip-sm-lbl{font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--g1);margin-bottom:3px;}
+.tip-sm-txt{font-size:12px;color:var(--muted);line-height:1.5;}
+
+/* ── SCHEDULE ── */
+.sched{border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+.sched-row{display:flex;align-items:flex-start;border-bottom:1px solid var(--border);}
+.sched-row:last-child{border-bottom:none;}
+.sched-time{width:52px;flex-shrink:0;padding:10px 6px;text-align:right;font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--g1);border-right:2px solid var(--g1);background:var(--g1-dim);letter-spacing:-0.01em;}
+.sched-content{padding:10px 14px;flex:1;}
+.sched-ttl{font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px;}
+.sched-det{font-size:11px;color:var(--muted);}
+
+/* ── NOTE BOXES ── */
+.note-box{background:var(--bg3);border-left:3px solid var(--g1);border-radius:0 8px 8px 0;padding:12px 14px;font-size:13px;color:var(--muted);line-height:1.6;margin-top:10px;}
+.note-box strong{color:var(--g1);font-weight:500;}
+.warn-box{background:var(--bg3);border-left:3px solid var(--coral);border-radius:0 8px 8px 0;padding:12px 14px;font-size:13px;color:var(--muted);line-height:1.6;margin-top:8px;}
+.warn-box strong{color:var(--coral);font-weight:500;}
+
+/* ── INFO GRID ── */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;}
+.info-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px;}
+.info-card h4{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.info-card p{font-size:13px;color:var(--muted);line-height:1.6;}
+.info-card strong{color:var(--text);font-weight:500;}
+
+/* ── BUDGET ── */
+.budget-totals{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px;}
+.bt-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:22px;}
+.bt-label{font-size:11px;color:var(--muted);margin-bottom:6px;}
+.bt-val{font-family:'Syne',sans-serif;font-size:38px;font-weight:800;color:var(--g1);line-height:1;margin-bottom:4px;}
+.bt-sub{font-size:12px;color:var(--muted);}
+.prog-section{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:12px;}
+.prog-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+.prog-row:last-child{margin-bottom:0;}
+.prog-label{font-size:12px;color:var(--muted);min-width:130px;}
+.prog-bg{flex:1;height:6px;background:var(--faint);border-radius:3px;overflow:hidden;}
+.prog-fill{height:100%;border-radius:3px;}
+.prog-val{font-size:12px;font-weight:500;color:var(--text);min-width:55px;text-align:right;}
+.acc-table{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px;}
+.acc-head{display:grid;grid-template-columns:1fr auto auto;padding:10px 16px;background:var(--surface);border-bottom:1px solid var(--border);}
+.acc-head span{font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);}
+.acc-row{display:grid;grid-template-columns:1fr auto auto;padding:12px 16px;border-bottom:1px solid var(--border);align-items:center;}
+.acc-row:last-child{border-bottom:none;}
+.acc-city{font-size:13px;font-weight:500;color:var(--text);}
+.acc-detail{font-size:11px;color:var(--muted);margin-top:2px;}
+.acc-nights{font-size:12px;color:var(--muted);text-align:center;padding:0 12px;}
+.acc-price{font-size:13px;font-weight:500;color:var(--text);text-align:right;}
+.acc-total{background:var(--g1-dim);display:grid;grid-template-columns:1fr auto auto;padding:12px 16px;}
+.acc-total span{font-size:13px;font-weight:600;color:var(--g1);}
+.act-table{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px;}
+.act-row{display:flex;padding:12px 16px;border-bottom:1px solid var(--border);gap:16px;}
+.act-row:last-child{border-bottom:none;}
+.act-info{flex:1;}
+.act-name{font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px;}
+.act-note{font-size:11px;color:var(--muted);}
+.act-price{font-size:13px;font-weight:500;color:var(--text);flex-shrink:0;}
+.costs-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.cost-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px;}
+.cost-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:10px;}
+.cost-line{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);padding:4px 0;border-bottom:1px solid var(--border);}
+.cost-line:last-child{border-bottom:none;color:var(--text);font-weight:500;}
+.budget-tips{display:flex;flex-direction:column;gap:8px;margin-top:4px;}
+.budget-tip{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;font-size:13px;color:var(--muted);line-height:1.6;border-left:3px solid;}
+.summary-table{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-top:12px;}
+.sum-row{display:flex;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--border);font-size:13px;}
+.sum-label{color:var(--muted);}
+.sum-val{color:var(--text);font-weight:500;}
+.sum-total{background:var(--g1-dim);display:flex;justify-content:space-between;align-items:center;padding:16px 18px;}
+.sum-total-label{font-size:14px;font-weight:600;color:var(--g1);}
+.sum-total-val{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--g1);}
+.sum-pp{background:var(--surface);display:flex;justify-content:space-between;align-items:center;padding:12px 18px;}
+.sum-pp-label{font-size:12px;color:var(--muted);}
+.sum-pp-val{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--text);}
+
+/* ── FOOTER ── */
+footer{border-top:1px solid var(--border);text-align:center;padding:40px 48px;font-size:12px;color:var(--faint);}
+footer strong{color:var(--muted);}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.hero-inner>*{animation:fadeUp 0.7s ease both;}
+.eyebrow{animation-delay:0.1s}h1{animation-delay:0.22s}.hero-meta{animation-delay:0.32s}.hero-stats-row{animation-delay:0.42s;opacity:0;transform:translateY(20px);transition:opacity 0.7s,transform 0.7s;}.hero-tabs{animation-delay:0.55s}
+.section-anim{opacity:0;transform:translateY(20px);transition:opacity 0.5s,transform 0.5s;}
+.section-anim.visible{opacity:1;transform:translateY(0);}
+@keyframes glow{0%,100%{text-shadow:0 0 40px rgba(74,200,120,0.25)}50%{text-shadow:0 0 80px rgba(74,200,120,0.45)}}
+h1 .accent{animation:glow 4s ease-in-out infinite;}
+
+@media(max-width:700px){
+  .hero{padding:52px 20px;}
+  .nav-inner{padding:10px 16px;}
+  .sections{padding:0 20px 80px;}
+  h1{font-size:44px;}
+  .tips-2col,.wander-grid,.cards-grid,.budget-totals,.costs-grid{grid-template-columns:1fr;}
+  .route-steps{flex-direction:column;align-items:flex-start;gap:4px;}
+  .rs-arr{transform:rotate(90deg);padding:4px 0;}
+  .hero-tabs{gap:6px;flex-wrap:wrap;}
+  .hero-tab{padding:9px 14px;font-size:12px;flex:1;min-width:calc(50% - 6px);justify-content:center;}
+  .ht-label{display:none;}
+  .acc-row,.acc-head,.acc-total{grid-template-columns:1fr auto auto!important;}
+  .acc-row>div:nth-child(3){display:none;}
+  .acc-head span:nth-child(3){display:none;}
+}
+
+/* ── COUNTER ANIMATION ── */
+.count-anim{display:inline-block;}
+
+/* ── PAGE TRANSITION ── */
+.page{display:none;opacity:0;}
+.page.active{display:block;animation:pageIn 0.3s ease forwards;}
+@keyframes pageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── GLASSMORPHISM OPEN CARD ── */
+.stop-card.open{
+  border-color:rgba(74,200,120,0.3)!important;
+  box-shadow:0 0 0 1px rgba(74,200,120,0.1),0 8px 40px rgba(0,0,0,0.3),inset 0 1px 0 rgba(74,200,120,0.08);
+  background:linear-gradient(135deg,rgba(74,200,120,0.04) 0%,var(--bg2) 100%)!important;
+}
+.day-card.open{
+  border-color:rgba(74,200,120,0.3)!important;
+  box-shadow:0 0 0 1px rgba(74,200,120,0.1),0 8px 40px rgba(0,0,0,0.3),inset 0 1px 0 rgba(74,200,120,0.08);
+  background:linear-gradient(135deg,rgba(74,200,120,0.04) 0%,var(--bg2) 100%)!important;
+}
+
+/* ── STAR RATING ── */
+.stars{display:inline-flex;gap:2px;vertical-align:middle;}
+.star{width:12px;height:12px;}
+.star-full path{fill:#C8A84A;}
+.star-partial .star-fill{fill:#C8A84A;}
+.star-empty path{fill:var(--faint);}
+
+/* ── ROUTE TIMELINE ── */
+.route-timeline{
+  display:flex;align-items:center;
+  margin:20px 0 32px;
+  position:relative;
+}
+.rt-stop{
+  display:flex;flex-direction:column;align-items:center;
+  gap:6px;z-index:1;
+}
+.rt-dot{
+  width:10px;height:10px;border-radius:50%;
+  border:2px solid var(--g1);background:var(--bg);
+  transition:all 0.2s;
+}
+.rt-dot.active{background:var(--g1);box-shadow:0 0 10px rgba(74,200,120,0.5);}
+.rt-label{font-size:10px;font-weight:600;color:var(--muted);letter-spacing:0.04em;white-space:nowrap;}
+.rt-date{font-size:9px;color:var(--faint);}
+.rt-line{flex:1;height:1px;background:linear-gradient(90deg,var(--g1),var(--g2));margin:0 2px;margin-bottom:28px;}
+
+/* ── APP FEEL: bottom safe area ── */
+@supports(padding-bottom:env(safe-area-inset-bottom)){
+  footer{padding-bottom:calc(20px + env(safe-area-inset-bottom));}
+}
+
+/* ── SMOOTH OPEN BODY ── */
+.stop-body,.day-body{
+  animation:none;
+}
+.stop-card.open .stop-body,.day-card.open .day-body{
+  animation:bodySlide 0.3s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+@keyframes bodySlide{
+  from{opacity:0;transform:translateY(-8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div><div class="hero-grid"></div><div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div class="eyebrow"><span class="eyebrow-line"></span>Reiseplan 2026</div>
+    <h1><span class="accent">China</span><br><span class="white">Reise</span></h1>
+    <div class="hero-meta">
+      <div class="meta-item"><span class="meta-dot"></span>12. – 31. Juli 2026</div>
+      <div class="meta-item"><span class="meta-dot"></span>20 Tage · 7 Städte</div>
+      <div class="meta-item"><span class="meta-dot"></span>Peking · Chengdu · Chongqing · Zhangjiajie · Shenzhen · Hongkong · Shanghai</div>
+    </div>
+    <div class="hero-stats-row">
+      <div class="hstat-pill"><span class="hstat-val"><span class="count-anim" data-target="20">20</span></span><span class="hstat-lbl">Reisetage</span></div>
+      <div class="hstat-pill"><span class="hstat-val"><span class="count-anim" data-target="7">7</span></span><span class="hstat-lbl">Städte</span></div>
+      <div class="hstat-pill"><span class="hstat-val"><span class="count-anim" data-target="4400" data-prefix="~" data-suffix=" €">~4.400 €</span></span><span class="hstat-lbl">Budget zu zweit</span></div>
+      <div class="hstat-pill"><span class="hstat-val"><span class="count-anim" data-target="18">18</span></span><span class="hstat-lbl">Nächte</span></div>
+    </div>
+    <div class="hero-tabs stops-row">
+      <a class="stop-btn hero-tab active" href="file:///C:/Users/LuisJoseMarcanoMenen/Downloads/china_reise_2026_3.html#" onclick="showPage(&#39;reiseplan&#39;);return false;">
+        <span class="ht-info"><span class="ht-label">Täglich</span><span class="ht-name">Reiseplan</span></span>
+      </a>
+      <a class="stop-btn hero-tab" href="file:///C:/Users/LuisJoseMarcanoMenen/Downloads/china_reise_2026_3.html#" onclick="showPage(&#39;empfehlungen&#39;);return false;">
+        <span class="ht-info"><span class="ht-label">Unsere Anpassungen</span><span class="ht-name">Empfehlungen</span></span>
+      </a>
+      <a class="stop-btn hero-tab" href="file:///C:/Users/LuisJoseMarcanoMenen/Downloads/china_reise_2026_3.html#" onclick="showPage(&#39;budget&#39;);return false;">
+        <span class="ht-info"><span class="ht-label">Kosten &amp; Schätzung</span><span class="ht-name">Budget</span></span>
+      </a>
+      <a class="stop-btn hero-tab" href="file:///C:/Users/LuisJoseMarcanoMenen/Downloads/china_reise_2026_3.html#" onclick="showPage(&#39;tipps&#39;);return false;">
+        <span class="ht-info"><span class="ht-label">Wichtiges vor der Reise</span><span class="ht-name">Tipps &amp; Apps</span></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ══ PAGE: REISEPLAN ══ -->
+<div class="page active" id="page-reiseplan">
+<div class="sections">
+
+  <div class="page-hdr section-anim visible">
+    <div class="page-hdr-label">12. – 31. Juli 2026 · 20 Tage</div>
+    <div class="page-hdr-title">Der <span class="acc">Reiseplan</span></div>
+    <div class="page-hdr-sub">7 Städte · Peking → Shanghai · Zug + Flug</div>
+  </div>
+
+  <!-- Übersicht Route -->
+  <div class="route-bar section-anim visible">
+    <div class="route-title">Auf einen Blick &nbsp;·&nbsp; <span style="font-style:italic;color:var(--faint);font-size:10px;">Que la pasen buenísimo en China</span></div>
+    <div class="route-steps">
+      <div class="rs"><div class="rs-flag">LHR</div><div class="rs-city">London</div><div class="rs-date">12. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">10h15</div></div>
+      <div class="rs"><div class="rs-flag">PKX</div><div class="rs-city">Peking</div><div class="rs-date">13.–16. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">Zug</div></div>
+      <div class="rs"><div class="rs-flag">CTU</div><div class="rs-city">Chengdu</div><div class="rs-date">16.–18. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">Zug</div></div>
+      <div class="rs"><div class="rs-flag">CKG</div><div class="rs-city">Chongqing</div><div class="rs-date">18.–20. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">Zug</div></div>
+      <div class="rs"><div class="rs-flag">DYG</div><div class="rs-city">Zhangjiajie</div><div class="rs-date">20.–25. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">Zug</div></div>
+      <div class="rs"><div class="rs-flag">SZX</div><div class="rs-city">Shenzhen/HK</div><div class="rs-date">25.–28. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">Zug</div></div>
+      <div class="rs"><div class="rs-flag">PVG</div><div class="rs-city">Shanghai</div><div class="rs-date">28.–31. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">12h10</div></div>
+      <div class="rs"><div class="rs-flag">FRA</div><div class="rs-city">Frankfurt</div><div class="rs-date">31. Juli</div></div>
+    </div>
+  </div>
+
+  <!-- STOP 1: PEKING -->
+  <div class="stop-card section-anim visible" id="sc1">
+    <div class="stop-head" onclick="toggleCard(&#39;sc1&#39;)">
+      <div class="stop-accent" style="background:var(--coral)"></div>
+      <div class="stop-badge" style="color:var(--coral)"><div class="stop-num">1</div><div class="stop-flag">CN</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--coral)">Peking (Beijing)</div>
+        <div class="stop-sub">Hauptstadt · Verbotene Stadt · Chinesische Mauer · Sommerpalast</div>
+        <div class="stop-meta"><span class="date-pill" style="background:var(--bg3);color:var(--coral)">13.–16. Juli</span><span style="font-size:11px;color:var(--muted)">3 Nächte</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt" style="color:var(--coral)">3</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="sub-title">Tagesplan</div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">Mo 13.</div><div class="sched-content"><div class="sched-ttl">Ankunft Peking · Check-in · Jet-Lag überwinden</div><div class="sched-det">Flug LHR→PKX 21:00–14:15+1 · Spaziergang Hutong-Viertel zum Eingewöhnen</div></div></div>
+        <div class="sched-row"><div class="sched-time">Di 14.</div><div class="sched-content"><div class="sched-ttl">Verbotene Stadt + Tiananmen-Platz</div><div class="sched-det">Früh starten — um 8 Uhr öffnet das Palastmuseum. Eintritt: ~10 €. Online vorbuchen! Nachmittags: Wangfujing-Straße</div></div></div>
+        <div class="sched-row"><div class="sched-time">Mi 15.</div><div class="sched-content"><div class="sched-ttl">Chinesische Mauer (Mutianyu) + Sommerpalast</div><div class="sched-det">Mutianyu-Abschnitt: weniger Touristen als Badaling, Seilbahn rauf, Rodelbahn runter. Nachmittags Sommerpalast (4 €)</div></div></div>
+        <div class="sched-row"><div class="sched-time">Do 16.</div><div class="sched-content"><div class="sched-ttl">Morgendlicher Tempel des Himmels · Zug nach Chengdu</div><div class="sched-det">Tempel des Himmels: 4 € · Danach nehmen wir den Hochgeschwindigkeitszug Peking→Chengdu (7–10 h, 110 €)</div></div></div>
+      </div>
+      <div class="sub-title">Highlights &amp; Tipps</div>
+      <div class="cards-grid">
+        <div class="card"><div class="card-title">Verbotene Stadt</div><div class="card-desc">~60 RMB (8 €). Unbedingt online vorbuchen — Tageskontingent begrenzt! Mindestens 3–4 h einplanen.</div><span class="card-tag" style="background:var(--coral-dim);color:var(--coral)">Vorbuchen!</span></div>
+        <div class="card"><div class="card-title">Mauer: Mutianyu statt Badaling</div><div class="card-desc">Mutianyu ist restaurierter Abschnitt mit viel weniger Touristen. Seilbahn hoch (80 RMB) + Rodelbahn runter — unvergesslich!</div><span class="card-tag" style="background:var(--g1-dim);color:var(--g1)">Geheimtipp</span></div>
+        <div class="card"><div class="card-title">Hutong-Viertel</div><div class="card-desc">Traditionelle Gässchen — am besten per Rikscha oder zu Fuß. Drum Tower Gegend empfehlenswert. Kostenlos!</div><span class="card-tag" style="background:var(--g1-dim);color:var(--g1)">Kostenlos</span></div>
+        <div class="card"><div class="card-title">Peking-Ente essen</div><div class="card-desc">Quanjude oder Da Dong — Peking-Ente ist Pflicht! Abendessen ca. 30–50 € zu zweit.</div><span class="card-tag" style="background:var(--gold-dim);color:var(--gold)">Kulinarik</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STOP 2: CHENGDU -->
+  <div class="stop-card section-anim visible" id="sc2">
+    <div class="stop-head" onclick="toggleCard(&#39;sc2&#39;)">
+      <div class="stop-accent" style="background:var(--g1)"></div>
+      <div class="stop-badge" style="color:var(--g1)"><div class="stop-num">2</div><div class="stop-flag">CN</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--g1)">Chengdu</div>
+        <div class="stop-sub">Pandas · Sichuan-Küche · Entspannte Teehauskultur</div>
+        <div class="stop-meta"><span class="date-pill" style="background:var(--bg3);color:var(--g1)">16.–18. Juli</span><span style="font-size:11px;color:var(--muted)">2 Nächte</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt" style="color:var(--g1)">2</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="sub-title">Tagesplan</div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">Do 16.</div><div class="sched-content"><div class="sched-ttl">Ankunft Chengdu · Abendessen Sichuan-Küche</div><div class="sched-det">Ankunft nach Zug. Jinli Ancient Street zum Abendessen — feuerscharfe Sichuan-Gerichte!</div></div></div>
+        <div class="sched-row"><div class="sched-time">Fr 17.</div><div class="sched-content"><div class="sched-ttl">Früh: Panda-Forschungsbasis · Nachmittag: Stadt</div><div class="sched-det">Panda Base öffnet um 7:30 — früh hingehen! Pandas sind morgens aktiver. 55 RMB (7 €). Nachmittags: Kuanzhai Alley + People's Park Teehaus</div></div></div>
+        <div class="sched-row"><div class="sched-time">Sa 18.</div><div class="sched-content"><div class="sched-ttl">Zug nach Chongqing</div><div class="sched-det">1–3 h Zugfahrt (12 €) · Chongqing ist nur 300 km entfernt</div></div></div>
+      </div>
+      <div class="sub-title">Tipps</div>
+      <div class="cards-grid">
+        <div class="card"><div class="card-title">Panda Base: Früh starten!</div><div class="card-desc">Vor 9 Uhr sind die Pandas noch draußen und aktiv. Ab 11 Uhr schlafen sie meistens. Tickets online auf Trip.com vorbuchen.</div><span class="card-tag" style="background:var(--coral-dim);color:var(--coral)">Früh gehen!</span></div>
+        <div class="card"><div class="card-title">Sichuan Hotpot</div><div class="card-desc">Pflicht in Chengdu! Haidilao (bekannte Kette) oder lokale Restaurants. Vegetarische Optionen vorhanden — sehr scharf — Vorsicht!</div><span class="card-tag" style="background:var(--gold-dim);color:var(--gold)">Kulinarik</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STOP 3: CHONGQING -->
+  <div class="stop-card section-anim visible" id="sc3">
+    <div class="stop-head" onclick="toggleCard(&#39;sc3&#39;)">
+      <div class="stop-accent" style="background:var(--teal)"></div>
+      <div class="stop-badge" style="color:var(--teal)"><div class="stop-num">3</div><div class="stop-flag">CN</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--teal)">Chongqing</div>
+        <div class="stop-sub">Cyberpunk-Skyline · Bergige Megastadt · Yangtze-Flussufer</div>
+        <div class="stop-meta"><span class="date-pill" style="background:var(--bg3);color:var(--teal)">18.–20. Juli</span><span style="font-size:11px;color:var(--muted)">2 Nächte</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt" style="color:var(--teal)">2</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="sub-title">Tagesplan</div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">Sa 18.</div><div class="sched-content"><div class="sched-ttl">Ankunft · Hongya Cave · Skyline-Spaziergang</div><div class="sched-det">Hongya Cave (18-stöckige Holzbauten am Hang) — abends beleuchtet unfassbar schön. Kostenlos!</div></div></div>
+        <div class="sched-row"><div class="sched-time">So 19.</div><div class="sched-content"><div class="sched-ttl">Ciqikou Ancient Town · Yangtze-Seilbahn · Chaotianmen</div><div class="sched-det">Ciqikou: alte Tempelstadt, traditionelle Snacks. Yangtze-Seilbahn: 10 RMB — spektakulärer Blick auf die Megastadt</div></div></div>
+        <div class="sched-row"><div class="sched-time">Mo 20.</div><div class="sched-content"><div class="sched-ttl">Zug nach Zhangjiajie</div><div class="sched-det">2–3 h Fahrt (30 €)</div></div></div>
+      </div>
+      <div class="cards-grid">
+        <div class="card"><div class="card-title">Chongqing bei Nacht</div><div class="card-desc">Eine der spektakulärsten Nacht-Skylines der Welt. Unbedingt Hongya Cave abends besuchen — absolut kostenlos!</div><span class="card-tag" style="background:var(--g1-dim);color:var(--g1)">Kostenlos + Wow</span></div>
+        <div class="card"><div class="card-title">Monorail durch Hochhaus</div><div class="card-desc">Linie 2 der U-Bahn fährt mitten durch ein Wohnhochhaus — weltbekanntes Kuriosum. Einfach U-Bahn nehmen!</div><span class="card-tag" style="background:var(--teal-dim);color:var(--teal)">Einmalig</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STOP 4: ZHANGJIAJIE -->
+  <div class="stop-card section-anim visible open" id="sc4">
+    <div class="stop-head" onclick="toggleCard(&#39;sc4&#39;)">
+      <div class="stop-accent" style="background:var(--moss)"></div>
+      <div class="stop-badge" style="color:var(--moss)"><div class="stop-num">4</div><div class="stop-flag">CN</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--moss)">Zhangjiajie</div>
+        <div class="stop-sub">Avatar-Berge · National Forest Park · Tianmen Mountain · Furong Town</div>
+        <div class="stop-meta"><span class="date-pill" style="background:var(--bg3);color:var(--moss)">20.–25. Juli</span><span style="font-size:11px;color:var(--muted)">5 Nächte · Herzstück der Reise</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt" style="color:var(--moss)">5</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="note-box"><strong>Warum 5 statt 4 Nächte?</strong> <span style="font-size:10px;color:var(--faint);font-style:italic;">(besitos desde Bergedorf)</span> Wir empfehlen einen Tag extra. Der National Forest Park hat ein 4-Tages-Ticket — und Juli ist Hochsaison mit bis zu 53.000 Besuchern täglich. Timed Entry System seit 2025: Einlasszeitfenster muss vorab reserviert werden. Puffer ist wichtig!</div>
+      <div class="sub-title">Tagesplan</div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">Mo 20.</div><div class="sched-content"><div class="sched-ttl">Ankunft · Eingewöhnen · Ticket kaufen</div><div class="sched-det">Forest Park Ticket online kaufen + erstes Zeitfenster reservieren. Abends Stadt erkunden.</div></div></div>
+        <div class="sched-row"><div class="sched-time">Di 21.</div><div class="sched-content"><div class="sched-ttl">National Forest Park — Tag 1: Yuanjiajie + Bailong Elevator</div><div class="sched-det">Avatar Hallelujah Mountains · Bailong Sky Elevator (höchster Außenaufzug der Welt, 72 RMB) · Yuanjiajie Aussichtspunkte</div></div></div>
+        <div class="sched-row"><div class="sched-time">Mi 22.</div><div class="sched-content"><div class="sched-ttl">National Forest Park — Tag 2: Tianzi Mountain + Golden Whip Stream</div><div class="sched-det">Tianzi Mountain Seilbahn (72 RMB) · Ten-Mile Gallery · Golden Whip Stream Wanderung (flach, 7 km)</div></div></div>
+        <div class="sched-row"><div class="sched-time">Do 23.</div><div class="sched-content"><div class="sched-ttl">Tianmen Mountain</div><div class="sched-det">Längste Kabelbahn der Welt (7,5 km!) · Glasweg an der Felswand · 99 Kurven-Bergstraße · 288 RMB (36 €)</div></div></div>
+        <div class="sched-row"><div class="sched-time">Fr 24.</div><div class="sched-content"><div class="sched-ttl">Furong Town Tagesausflug (30 min Zug)</div><div class="sched-det">Alte Wasserfall-Stadt · Wasserfall mitten im Dorf · Sehr fotogen · Abends zurück nach Zhangjiajie</div></div></div>
+        <div class="sched-row"><div class="sched-time">Sa 25.</div><div class="sched-content"><div class="sched-ttl">Zug nach Shenzhen (6–7 h, 90 €)</div></div></div>
+      </div>
+      <div class="sub-title">Wichtige Infos</div>
+      <div class="cards-grid">
+        <div class="card"><div class="card-title">Timed Entry System (NEU 2025)</div><div class="card-desc">Seit Juni 2025 muss jeder Besuch vorab mit Zeitfenster reserviert werden. Pass unbedingt mitbringen — Gesichtserkennung am Eingang!</div><span class="card-tag" style="background:var(--coral-dim);color:var(--coral)">Pflicht vorbuchen</span></div>
+        <div class="card"><div class="card-title">Glasbrücke optional</div><div class="card-desc">Zhangjiajie Grand Canyon Glass Bridge: 180 RMB (23 €). Spektakulär aber extra Ausflug (45 min Fahrt). Optional einplanen.</div><span class="card-tag" style="background:var(--gold-dim);color:var(--gold)">Optional</span></div>
+        <div class="card"><div class="card-title">Hochsaison Juli</div><div class="card-desc">Juli ist Ferienzeit in China — sehr voll! Frühstart (vor 8 Uhr) ist Pflicht. Tickets für Seilbahnen separat kaufen.</div><span class="card-tag" style="background:var(--coral-dim);color:var(--coral)">Früh starten!</span></div>
+        <div class="card"><div class="card-title">Furong Town</div><div class="card-desc">30 min Zug ab Zhangjiajie. Alter Wasserfall-Ort mit Treppenstraßen — sehr fotogen, besonders abends beleuchtet.</div><span class="card-tag" style="background:var(--moss-dim);color:var(--moss)">Tagesausflug</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STOP 5: SHENZHEN + HONGKONG -->
+  <div class="stop-card section-anim visible" id="sc5">
+    <div class="stop-head" onclick="toggleCard(&#39;sc5&#39;)">
+      <div class="stop-accent" style="background:var(--violet)"></div>
+      <div class="stop-badge" style="color:var(--violet)"><div class="stop-num">5</div><div class="stop-flag">CN</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--violet)">Shenzhen + Hongkong</div>
+        <div class="stop-sub">Tech-Metropole · Hongkong Tagesausflug · Victoria Peak</div>
+        <div class="stop-meta"><span class="date-pill" style="background:var(--bg3);color:var(--violet)">25.–28. Juli</span><span style="font-size:11px;color:var(--muted)">3 Nächte</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt" style="color:var(--violet)">3</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="sub-title">Tagesplan</div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">Sa 25.</div><div class="sched-content"><div class="sched-ttl">Ankunft Shenzhen · Abendessen Dongmen Old Street</div></div></div>
+        <div class="sched-row"><div class="sched-time">So 26.</div><div class="sched-content"><div class="sched-ttl">Tagesausflug Hongkong (15–30 min Metro, 10 €)</div><div class="sched-det">Victoria Peak (Tram + Aussicht, 10 €) · Star Ferry (1 €) · Central + Soho · Abends zurück nach Shenzhen</div></div></div>
+        <div class="sched-row"><div class="sched-time">Mo 27.</div><div class="sched-content"><div class="sched-ttl">Shenzhen: Lianhua Mountain + OCT Loft · Abends: Nachtzug-Option</div><div class="sched-det">OCT Loft: Kunst- und Kreativviertel, kostenlos. Abends: Nachtzug Shenzhen→Shanghai (12–14 h, 100 €) als Option</div></div></div>
+        <div class="sched-row"><div class="sched-time">Di 28.</div><div class="sched-content"><div class="sched-ttl">Ankunft Shanghai (oder Tageszug)</div></div></div>
+      </div>
+      <div class="note-box"><strong>Tipp:</strong> Wir empfehlen 1 Nacht Hongkong zu streichen und stattdessen einen Tagesausflug zu machen — so sparen wir das teure Hongkong-Hotel (90 €) und können die Nacht im günstigeren Shenzhen schlafen. Das Crossover dauert nur 15–30 min!</div>
+    </div>
+  </div>
+
+  <!-- STOP 6: SHANGHAI -->
+  <div class="stop-card section-anim visible" id="sc6">
+    <div class="stop-head" onclick="toggleCard(&#39;sc6&#39;)">
+      <div class="stop-accent" style="background:var(--gold)"></div>
+      <div class="stop-badge" style="color:var(--gold)"><div class="stop-num">6</div><div class="stop-flag">CN</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--gold)">Shanghai</div>
+        <div class="stop-sub">Der Bund · French Concession · Rückreise</div>
+        <div class="stop-meta"><span class="date-pill" style="background:var(--bg3);color:var(--gold)">28.–31. Juli</span><span style="font-size:11px;color:var(--muted)">3 Nächte</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt" style="color:var(--gold)">3</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="sub-title">Tagesplan</div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">Di 28.</div><div class="sched-content"><div class="sched-ttl">Ankunft Shanghai · The Bund abends</div><div class="sched-det">The Bund bei Nacht — kostenlos, spektakulär. Beste Sicht auf die Pudong-Skyline.</div></div></div>
+        <div class="sched-row"><div class="sched-time">Mi 29.</div><div class="sched-content"><div class="sched-ttl">Yu Garden · French Concession · Tianzifang</div><div class="sched-det">Yu Garden (6 €) · Tianzifang: Gässchen voller Cafés + Kunst, kostenlos · French Concession: Kolonialarchitektur</div></div></div>
+        <div class="sched-row"><div class="sched-time">Do 30.</div><div class="sched-content"><div class="sched-ttl">Oriental Pearl Tower (optional) · Shopping · letzter Abend</div><div class="sched-det">Oriental Pearl: 25 € · Alternative: kostenloser Blick vom The Bund · Nanjing Road Shopping</div></div></div>
+        <div class="sched-row"><div class="sched-time">Fr 31.</div><div class="sched-content"><div class="sched-ttl">Rückflug Shanghai Pudong → Frankfurt</div><div class="sched-det">PVG 11:05 → FRA 17:15 (12h10) · Danach DB FRA→LEI (21:02–0:31+1)</div></div></div>
+      </div>
+      <div class="cards-grid">
+        <div class="card"><div class="card-title">The Bund kostenlos</div><div class="card-desc">Der berühmteste Aussichtspunkt Shanghais ist komplett kostenlos. Abends mit Pudong-Skyline = perfektes Abschlussfoto der Reise.</div><span class="card-tag" style="background:var(--g1-dim);color:var(--g1)">Kostenlos</span></div>
+        <div class="card"><div class="card-title">Maglev zum Flughafen</div><div class="card-desc">Magnetschwebebahn Longyang Road→PVG: 8 Minuten, 50 RMB. Schnellste Verbindung zum Flughafen — und ein Erlebnis für sich!</div><span class="card-tag" style="background:var(--gold-dim);color:var(--gold)">Tipp Abreise</span></div>
+      </div>
+      <div class="car-note"><strong>Rückflug Fr, 31.07:</strong> PVG Shanghai Pudong → FRA Frankfurt (11:05–17:15 Uhr, 12h10) · Danach DB FRA→LEI (21:02–0:31+1 Uhr, 26 € p.P.)</div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ══ PAGE: EMPFEHLUNGEN ══ -->
+<div class="page" id="page-empfehlungen">
+<div class="sections">
+
+  <div class="page-hdr section-anim">
+    <div class="page-hdr-label">Unsere Anpassungen am ursprünglichen Plan</div>
+    <div class="page-hdr-title">Empfeh<span class="acc">lungen</span></div>
+    <div class="page-hdr-sub">Was wir anders machen würden — und warum</div>
+  </div>
+
+  <div class="region-hdr section-anim">
+    <div class="region-num">01</div>
+    <div><div class="region-lbl">Wichtigste Änderung</div>
+    <div class="region-name" style="color:var(--moss)">Zhangjiajie: 4 → 5 Nächte</div>
+    <div class="region-dates">Einen Tag mehr für das Herzstück der Reise</div></div>
+  </div>
+  <div class="day-card section-anim" id="e1">
+    <div class="day-head" onclick="toggleDay(&#39;e1&#39;)">
+      <div class="day-date-col" style="background:var(--moss-dim)"><div class="day-dow" style="color:var(--moss)">War</div><div class="day-num" style="color:var(--moss)">4N</div><div class="day-mon" style="color:var(--moss)">→ 5N</div></div>
+      <div class="day-main-col"><div class="day-title">Zhangjiajie braucht mehr Zeit</div><div class="day-sub">4-Tages-Ticket + Tianmen Mountain + Furong Town = mindestens 5 volle Tage</div></div>
+      <div class="day-right-col"><span class="diff-pill" style="background:var(--g1-dim);color:var(--g1)">Dringend</span><div class="chevron"></div></div>
+    </div>
+    <div class="day-body">
+      <p class="hike-desc">Der National Forest Park hat ein 4-Tages-Ticket — das bedeutet, wir können (und sollte) 2 volle Tage im Park verbringen. Zusätzlich ist Tianmen Mountain ein komplett separates Highlight (ganzer Tag), und Furong Town ist ein schöner Tagesausflug (30 min Zug). Das sind allein schon 4 Tage Aktivitäten — plus Anreise-Tag. 4 Nächte wären zu knapp, wir würden uns hetzen.</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Timed Entry (NEU 2025)</div><div class="tip-sm-txt">Seit Juni 2025 muss jeder Parkbesuch vorab mit Passport reserviert werden. Extra Puffertag ist wichtig falls es Probleme gibt.</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Hochsaison Juli</div><div class="tip-sm-txt">Juli = chinesische Sommerferien. Bis 53.000 Besucher täglich. Frühstart und Vorbuchen ist absolut notwendig.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="region-hdr section-anim" style="margin-top:36px;">
+    <div class="region-num">02</div>
+    <div><div class="region-lbl">Budget-Optimierung</div>
+    <div class="region-name" style="color:var(--violet)">Hongkong: 1 Nacht streichen → Tagesausflug</div>
+    <div class="region-dates">Spart ~90 € Unterkunft bei gleichem Erlebnis</div></div>
+  </div>
+  <div class="day-card section-anim" id="e2">
+    <div class="day-head" onclick="toggleDay(&#39;e2&#39;)">
+      <div class="day-date-col" style="background:var(--violet-dim)"><div class="day-dow" style="color:var(--violet)">War</div><div class="day-num" style="color:var(--violet)">1N</div><div class="day-mon" style="color:var(--violet)">→ 0N</div></div>
+      <div class="day-main-col"><div class="day-title">Hongkong als Tagesausflug reicht völlig</div><div class="day-sub">15–30 min von Shenzhen · Spart 90 € teure HK-Unterkunft</div></div>
+      <div class="day-right-col"><span class="diff-pill" style="background:var(--violet-dim);color:var(--violet)">Empfohlen</span><div class="chevron"></div></div>
+    </div>
+    <div class="day-body">
+      <p class="hike-desc">Hongkong liegt nur 15–30 Minuten per Metro von Shenzhen entfernt (MTR Lo Wu oder Lok Ma Chau Grenzübergang). Ein Tagesausflug reicht um die Highlights zu sehen: Victoria Peak, Star Ferry, The Peak Tram, Central. Die Unterkunft in Hongkong ist deutlich teurer als in Shenzhen — 90 € für eine Nacht vs. ca. 60 € in Shenzhen. Wir sparen 30 € und verlieren nichts.</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Grenzübergang</div><div class="tip-sm-txt">Lo Wu oder Lok Ma Chau — täglich 6:30–24:00 geöffnet. MTR Ticket ~10 €. Passport mitbringen!</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Wichtig</div><div class="tip-sm-txt">Hongkong braucht kein chinesisches Visum — separates Territorium. Alipay/WeChat funktionieren dort auch.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="region-hdr section-anim" style="margin-top:36px;">
+    <div class="region-num">03</div>
+    <div><div class="region-lbl">Reiseroute</div>
+    <div class="region-name" style="color:var(--gold)">Nachtzug Shenzhen → Shanghai</div>
+    <div class="region-dates">Spart eine Nacht Unterkunft + Reisetag tagsüber</div></div>
+  </div>
+  <div class="day-card section-anim" id="e3">
+    <div class="day-head" onclick="toggleDay(&#39;e3&#39;)">
+      <div class="day-date-col" style="background:var(--gold-dim)"><div class="day-dow" style="color:var(--gold)">Neu</div><div class="day-num" style="color:var(--gold)">0€</div><div class="day-mon" style="color:var(--gold)">extra</div></div>
+      <div class="day-main-col"><div class="day-title">Nachtzug als Unterkunft nutzen</div><div class="day-sub">Abends in Shenzhen einsteigen · morgens in Shanghai aufwachen</div></div>
+      <div class="day-right-col"><span class="diff-pill" style="background:var(--gold-dim);color:var(--gold)">Optional</span><div class="chevron"></div></div>
+    </div>
+    <div class="day-body">
+      <p class="hike-desc">Der Zug Shenzhen→Shanghai dauert 7–12 Stunden. Als Nachtzug buchen: abends einsteigen, eine Nacht Unterkunft gespart. Soft Sleeper Kabine (4-Bett, Vorhang) ist sehr komfortabel und kostet ca. 100–130 € p.P. Die gesparte Unterkunft kostet in Shenzhen ca. 60–65 €. Bei 2 Personen sparen wir ~130 € Unterkunft für 200 € Zugkosten — fast neutral, aber wir gewinnen einen ganzen Tag in Shanghai.</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Buchung</div><div class="tip-sm-txt">Trip.com oder 12go.asia — Nachtzüge früh buchen, besonders Soft Sleeper ist begrenzt.</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Klassen</div><div class="tip-sm-txt">Hard Sleeper (6-Bett, günstiger) oder Soft Sleeper (4-Bett, mehr Privatsphäre). Soft Sleeper empfohlen.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="region-hdr section-anim" style="margin-top:36px;">
+    <div class="region-num">04</div>
+    <div><div class="region-lbl">Zusatz-Empfehlung</div>
+    <div class="region-name" style="color:var(--teal)">Xi'an als optionaler Stop?</div>
+    <div class="region-dates">Terrakotta-Armee — weltberühmt und nur 4–5 h von Peking</div></div>
+  </div>
+  <div class="day-card section-anim" id="e4">
+    <div class="day-head" onclick="toggleDay(&#39;e4&#39;)">
+      <div class="day-date-col" style="background:var(--teal-dim)"><div class="day-dow" style="color:var(--teal)">Opt.</div><div class="day-num" style="color:var(--teal)">+2</div><div class="day-mon" style="color:var(--teal)">Tage</div></div>
+      <div class="day-main-col"><div class="day-title">Xi'an: Terrakotta-Armee</div><div class="day-sub">Einer der bekanntesten Orte der Welt — auf dem Weg nach Chengdu</div></div>
+      <div class="day-right-col"><span class="diff-pill" style="background:var(--teal-dim);color:var(--teal)">Optional</span><div class="chevron"></div></div>
+    </div>
+    <div class="day-body">
+      <p class="hike-desc">Xi'an liegt direkt auf der Strecke Peking→Chengdu. Die Terrakotta-Armee (Eintritt ~24 €) ist eines der beeindruckendsten archäologischen Fundstätten der Welt. Zusätzlich: Stadtmauer (kostenlos spazieren), Muslim Quarter mit fantastischem Streetfood.. Wenn die Zeit erlaubt, 1–2 Nächte Xi'an einplanen und den Zug Peking→Chengdu mit Zwischenstopp buchen.</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Lohnt es sich?</div><div class="tip-sm-txt">Absolut — aber nur wenn wir die Reise um 2 Tage verlängern können. Nicht auf Kosten von Zhangjiajie kürzen!</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Eintritt</div><div class="tip-sm-txt">Terrakotta-Armee: 180 RMB (~24 €). Online vorbuchen — Tageskontingent begrenzt.</div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ══ PAGE: BUDGET ══ -->
+<div class="page" id="page-budget">
+<div class="sections">
+
+  <div class="page-hdr section-anim visible">
+    <div class="page-hdr-label">Geschätzte Kosten · Zu zweit</div>
+    <div class="page-hdr-title">Budget<span class="acc">planung</span></div>
+    <div class="page-hdr-sub">Alle Angaben pro Person (p.P.) und zu zweit</div>
+  </div>
+
+  <div class="budget-totals section-anim visible">
+    <div class="bt-card">
+      <div class="bt-label">Gesamt zu zweit (geschätzt)</div>
+      <div style="font-size:11px;color:var(--faint);margin-bottom:6px;font-style:italic;">Besitos desde Bergedorf 💘</div>
+      <div class="bt-val">~ 4.350 €</div>
+      <div class="bt-sub">20 Tage · 7 Städte · inkl. Flüge</div>
+    </div>
+    <div class="bt-card">
+      <div class="bt-label">Pro Person</div>
+      <div class="bt-val" style="color:var(--teal)">~ 2.175 €</div>
+      <div class="bt-sub">Flüge + Züge + Unterkunft + Aktivitäten</div>
+    </div>
+  </div>
+
+  <div class="prog-section section-anim visible">
+    <div class="sub-title" style="margin-top:0;">Kostenverteilung (zu zweit)</div>
+    <div class="prog-row"><span class="prog-label">Flüge (inkl. DB)</span><div class="prog-bg"><div class="prog-fill" style="width:64%;background:var(--coral)"></div></div><span class="prog-val">2.800 €</span></div>
+    <div class="prog-row"><span class="prog-label">Züge China</span><div class="prog-bg"><div class="prog-fill" style="width:15%;background:var(--gold)"></div></div><span class="prog-val">640 €</span></div>
+    <div class="prog-row"><span class="prog-label">Unterkunft (18N)</span><div class="prog-bg"><div class="prog-fill" style="width:22%;background:var(--g1)"></div></div><span class="prog-val">960 €</span></div>
+    <div class="prog-row"><span class="prog-label">Aktivitäten</span><div class="prog-bg"><div class="prog-fill" style="width:9%;background:var(--teal)"></div></div><span class="prog-val">240–400 €</span></div>
+    <div class="prog-row"><span class="prog-label">Essen &amp; Sonstiges</span><div class="prog-bg"><div class="prog-fill" style="width:12%;background:var(--moss)"></div></div><span class="prog-val">~500 €</span></div>
+  </div>
+
+  <div class="sub-title">Flüge (p.P.)</div>
+  <div class="acc-table section-anim visible">
+    <div class="acc-head"><span>Strecke</span><span>Dauer</span><span>Kosten p.P.</span></div>
+    <div class="acc-row"><div><div class="acc-city">London LHR → Peking PKX</div><div class="acc-detail">So 12.07. · 21:00 – 14:15+1</div></div><div class="acc-nights">10h15</div><div class="acc-price">778,50 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Shanghai PVG → Frankfurt FRA</div><div class="acc-detail">Fr 31.07. · 11:05 – 17:15</div></div><div class="acc-nights">12h10</div><div class="acc-price">619 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Frankfurt FRA → Leipzig LEI (DB)</div><div class="acc-detail">Fr 31.07. · 21:02 – 0:31+1</div></div><div class="acc-nights">~3h</div><div class="acc-price">26 €</div></div>
+    <div class="acc-total"><span>Gesamt Flüge + Bahn</span><span></span><span>1.423,50 € p.P.</span></div>
+  </div>
+
+  <div class="sub-title">Züge China (p.P.)</div>
+  <div class="acc-table section-anim">
+    <div class="acc-head"><span>Strecke</span><span>Dauer</span><span>Kosten p.P.</span></div>
+    <div class="acc-row"><div><div class="acc-city">Peking → Chengdu</div></div><div class="acc-nights">7–10 h</div><div class="acc-price">110 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Chengdu → Chongqing</div></div><div class="acc-nights">1–3 h</div><div class="acc-price">12 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Chongqing → Zhangjiajie</div></div><div class="acc-nights">2–3 h</div><div class="acc-price">30 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Zhangjiajie → Shenzhen</div></div><div class="acc-nights">6–7 h</div><div class="acc-price">90 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Shenzhen → Shanghai (Nachtzug empfohlen)</div></div><div class="acc-nights">7–12 h</div><div class="acc-price">100–130 €</div></div>
+    <div class="acc-total"><span>Gesamt Züge</span><span></span><span>~342–372 € p.P.</span></div>
+  </div>
+
+  <div class="sub-title">Unterkunft (zu zweit)</div>
+  <div class="acc-table section-anim">
+    <div class="acc-head"><span>Stadt</span><span>Nächte</span><span>Gesamt</span></div>
+    <div class="acc-row"><div><div class="acc-city">Peking</div></div><div class="acc-nights">3N</div><div class="acc-price">150 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Chengdu</div></div><div class="acc-nights">2N</div><div class="acc-price">100 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Chongqing</div></div><div class="acc-nights">2N</div><div class="acc-price">120 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Zhangjiajie (+1 Nacht Empfehlung)</div></div><div class="acc-nights">5N</div><div class="acc-price">~240 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Shenzhen (statt HK Nacht)</div></div><div class="acc-nights">3N</div><div class="acc-price">190 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">Shanghai</div></div><div class="acc-nights">3N</div><div class="acc-price">120 €</div></div>
+    <div class="acc-total"><span>Gesamt Unterkunft</span><span>18N</span><span>~920 €</span></div>
+  </div>
+
+  <div class="sub-title">Aktivitäten (p.P. Schätzung)</div>
+  <div class="act-table section-anim">
+    <div class="act-row"><div class="act-info"><div class="act-name">Peking: Verbotene Stadt + Mauer + Sommerpalast + Tempel</div><div class="act-note">Vorbuchen! Verbotene Stadt: Tageskontingent begrenzt</div></div><div class="act-price">25–40 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Chengdu: Panda-Forschungsbasis</div><div class="act-note">55 RMB · früh morgens</div></div><div class="act-price">7 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Chongqing: fast alles kostenlos</div><div class="act-note">Hongya Cave, Yangtze-Seilbahn, Stadtbesichtigung</div></div><div class="act-price">0–5 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Zhangjiajie: Forest Park + Seilbahnen + Tianmen</div><div class="act-note">Forest Park 4-Tages-Ticket + Bailong Elevator + Tianmen Mountain</div></div><div class="act-price">65–90 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Glasbrücke (optional)</div><div class="act-note">180 RMB · ca. 45 min Fahrt</div></div><div class="act-price">23 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Hongkong: Victoria Peak + Star Ferry</div><div class="act-note">Tagesausflug von Shenzhen</div></div><div class="act-price">10–20 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Shanghai: Oriental Pearl Tower (optional)</div><div class="act-note">The Bund kostenlos · nur Tower kostenpflichtig</div></div><div class="act-price">0–25 €</div></div>
+  </div>
+
+  <div class="sub-title">Zusammenfassung</div>
+  <div class="summary-table section-anim">
+    <div class="sum-row"><span class="sum-label">Flüge + Bahn (p.P.)</span><span class="sum-val">1.423 €</span></div>
+    <div class="sum-row"><span class="sum-label">Züge China (p.P.)</span><span class="sum-val">~342–372 €</span></div>
+    <div class="sum-row"><span class="sum-label">Unterkunft 18 Nächte (zu zweit)</span><span class="sum-val">~920 €</span></div>
+    <div class="sum-row"><span class="sum-label">Aktivitäten (p.P.)</span><span class="sum-val">~120–200 €</span></div>
+    <div class="sum-row"><span class="sum-label">Essen &amp; Sonstiges (p.P., ~25 €/Tag)</span><span class="sum-val">~500 €</span></div>
+    <div class="sum-total"><span class="sum-total-label">Gesamt zu zweit</span><span class="sum-total-val">~4.350 €</span></div>
+    <div class="sum-pp"><span class="sum-pp-label">Pro Person</span><span class="sum-pp-val">~2.175 €</span></div>
+  </div>
+
+</div>
+</div>
+
+<!-- ══ PAGE: TIPPS ══ -->
+<div class="page" id="page-tipps">
+<div class="sections">
+
+  <div class="page-hdr section-anim visible">
+    <div class="page-hdr-label">Vor der Abreise erledigen</div>
+    <div class="page-hdr-title">Tipps &amp; <span class="acc">Apps</span></div>
+    <div class="page-hdr-sub">Alles was wir vor China wissen und vorbereiten müssen</div>
+  </div>
+
+  <div class="sub-title">Pflicht vor der Reise</div>
+  <div class="info-grid section-anim visible">
+    <div class="info-card"><h4>Visum</h4><p>Deutsche können <strong>30 Tage visumfrei</strong> nach China (seit 2024). Reisepass muss mind. 6 Monate gültig sein. Bei 20 Tagen kein Visum nötig!</p></div>
+    <div class="info-card"><h4>Alipay einrichten</h4><p>China ist <strong>fast vollständig bargeldlos</strong>. Alipay mit internationaler Visa/Mastercard verknüpfen — VOR der Abreise einrichten. Tour Pass Feature für uns als Ausländer nutzen.</p></div>
+    <div class="info-card"><h4>WeChat installieren</h4><p>WeChat ist das <strong>WhatsApp Chinas</strong>. Für Kommunikation, Tickets, Navigation unerlässlich. Mit ausländischer Nummer registrieren.</p></div>
+    <div class="info-card"><h4>VPN einrichten</h4><p>Google, Instagram, WhatsApp, YouTube sind in China gesperrt. <strong>VPN vor der Abreise</strong> installieren (in China können wir es nicht mehr herunterladen!). ExpressVPN oder NordVPN empfohlen.</p></div>
+  </div>
+
+  <div class="sub-title">Apps — Digitales Überlebenskit</div>
+  <div class="cards-grid section-anim visible">
+    <div class="card"><div class="card-title">Alipay</div><div class="card-desc">Zahlung überall. Mit Visa/Mastercard verknüpfen. Tour Pass Feature für uns als Ausländer. Auch für DiDi (Taxi) nutzbar.</div><span class="card-tag" style="background:var(--coral-dim);color:var(--coral)">Pflicht</span></div>
+    <div class="card"><div class="card-title">WeChat</div><div class="card-desc">Kommunikation, Buchungen, Social Media. Alle Chinesen nutzen es. Auch für QR-Tickets an Sehenswürdigkeiten.</div><span class="card-tag" style="background:var(--coral-dim);color:var(--coral)">Pflicht</span></div>
+    <div class="card"><div class="card-title">Trip.com</div><div class="card-desc">Züge, Flüge, Hotels buchen — akzeptiert internationale Kreditkarten, Englisches Interface. Bester Weg für Zugtickets als Ausländer.</div><span class="card-tag" style="background:var(--g1-dim);color:var(--g1)">Wichtig</span></div>
+    <div class="card"><div class="card-title">DiDi (in Alipay)</div><div class="card-desc">Chinas Uber. Günstig und zuverlässig. Am besten als Mini-App in Alipay nutzen — bereits auf Englisch.</div><span class="card-tag" style="background:var(--g1-dim);color:var(--g1)">Wichtig</span></div>
+    <div class="card"><div class="card-title">Google Maps offline</div><div class="card-desc">Maps offline speichern VOR der Abreise (in China mit VPN eingeschränkt). Alternative: Amap (中文) oder Apple Maps.</div><span class="card-tag" style="background:var(--gold-dim);color:var(--gold)">Empfohlen</span></div>
+    <div class="card"><div class="card-title">VPN</div><div class="card-desc">Vor Abreise installieren! ExpressVPN oder NordVPN. Unbedingt vor der Reise kaufen und testen — in China nicht downloadbar.</div><span class="card-tag" style="background:var(--coral-dim);color:var(--coral)">Vor Abreise!</span></div>
+    <div class="card"><div class="card-title">Klook / GetYourGuide</div><div class="card-desc">Für Tickets (Verbotene Stadt, Panda Base, Glasbrücke). Internationale Karten akzeptiert, Englisch.</div><span class="card-tag" style="background:var(--teal-dim);color:var(--teal)">Tickets</span></div>
+    <div class="card"><div class="card-title">Google Translate offline</div><div class="card-desc">Chinesisch offline Paket herunterladen. Kamera-Übersetzung für Speisekarten ist Gold wert!</div><span class="card-tag" style="background:var(--g1-dim);color:var(--g1)">Nützlich</span></div>
+  </div>
+
+  <div class="sub-title">Züge in China — Typen &amp; Buchung</div>
+  <div class="info-grid section-anim">
+    <div class="info-card"><h4>G-Zug (Gaotie) — Unser Hauptverkehrsmittel</h4><p><strong>300–350 km/h</strong> — der schnellste und modernste Hochgeschwindigkeitszug. Sauber, pünktlich, mit Steckdosen. Für alle unsere Hauptstrecken (Peking→Chengdu, Chengdu→Chongqing usw.) nehmen wir den G-Zug. <strong>2. Klasse</strong> reicht völlig — bequem und günstig.</p></div>
+    <div class="info-card"><h4>D-Zug (Dongche)</h4><p><strong>200–250 km/h</strong> — etwas langsamer als G-Züge, aber auch komfortabel. Oft günstiger. Kann auch auf normalen Gleisen fahren. Gut für kürzere Strecken wie Chengdu→Chongqing.</p></div>
+    <div class="info-card"><h4>Z-Zug — Nachtzug</h4><p><strong>Für Shenzhen→Shanghai</strong> ideal. Soft Sleeper: 4-Bett-Kabine mit Vorhang (~100–130 € p.P.) — sehr komfortabel. Hard Sleeper: 6-Bett, günstiger. Abends einsteigen, morgens ankommen = eine Nacht Unterkunft gespart!</p></div>
+    <div class="info-card"><h4>Wann buchen?</h4><p>Tickets sind <strong>frühestens 15 Tage vor Abfahrt</strong> buchbar. Juli ist Hochsaison — wir buchen am ersten möglichen Tag! Besonders Peking→Chengdu und Shenzhen→Shanghai früh sichern. <strong>Trip.com</strong> in Deutsch, internationale Karte akzeptiert.</p></div>
+    <div class="info-card"><h4>Wie buchen als Ausländer?</h4><p><strong>Trip.com</strong> ist die einfachste Option — auf Deutsch, akzeptiert Visa/Mastercard, PayPal. Alternativ 12306.cn (offizielle Seite, etwas komplizierter). Am Bahnhof am Schalter ist auch möglich — Pass mitbringen!</p></div>
+    <div class="info-card"><h4>Am Bahnhof</h4><p><strong>1–2 Stunden vorher da sein</strong> — Sicherheitskontrolle + Passport-Check. Online gebuchte Tickets brauchen keinen Ausdruck — Pass reicht. An großen Bahnhöfen gibt es spezielle "Foreign Passport" Schalter.</p></div>
+  </div>
+
+  <div class="sub-title">Unsere Zugstrecken — Wann buchen?</div>
+  <div class="acc-table section-anim">
+    <div class="acc-head" style="grid-template-columns:1fr auto auto auto;"><span>Strecke</span><span>Typ</span><span>Dauer</span><span>Buchen ab</span></div>
+    <div class="acc-row" style="grid-template-columns:1fr auto auto auto;"><div><div class="acc-city">Peking → Chengdu</div><div class="acc-detail">G-Zug · 2. Klasse empfohlen</div></div><div class="acc-nights">G-Zug</div><div class="acc-nights">7–10 h</div><div class="acc-price" style="color:var(--coral);">ab 2. Juli</div></div>
+    <div class="acc-row" style="grid-template-columns:1fr auto auto auto;"><div><div class="acc-city">Chengdu → Chongqing</div><div class="acc-detail">G- oder D-Zug · kurze Strecke</div></div><div class="acc-nights">G/D-Zug</div><div class="acc-nights">1–3 h</div><div class="acc-price" style="color:var(--gold);">ab 3. Juli</div></div>
+    <div class="acc-row" style="grid-template-columns:1fr auto auto auto;"><div><div class="acc-city">Chongqing → Zhangjiajie</div><div class="acc-detail">G-Zug</div></div><div class="acc-nights">G-Zug</div><div class="acc-nights">2–3 h</div><div class="acc-price" style="color:var(--gold);">ab 5. Juli</div></div>
+    <div class="acc-row" style="grid-template-columns:1fr auto auto auto;"><div><div class="acc-city">Zhangjiajie → Shenzhen</div><div class="acc-detail">G-Zug</div></div><div class="acc-nights">G-Zug</div><div class="acc-nights">6–7 h</div><div class="acc-price" style="color:var(--gold);">ab 10. Juli</div></div>
+    <div class="acc-row" style="grid-template-columns:1fr auto auto auto;"><div><div class="acc-city">Shenzhen → Shanghai</div><div class="acc-detail">Z-Nachtzug empfohlen · Soft Sleeper</div></div><div class="acc-nights">Z-Zug</div><div class="acc-nights">7–12 h</div><div class="acc-price" style="color:var(--coral);">ab 13. Juli</div></div>
+    <div class="acc-total" style="grid-template-columns:1fr auto auto auto;"><span>Alle Tickets auf Trip.com buchen</span><span></span><span></span><span>trip.com</span></div>
+  </div>
+
+  <div class="note-box section-anim"><strong>Wichtig:</strong> Zugtickets in China sind erst 15 Tage vor Abfahrt buchbar. Wir merken uns die Daten und buchen sofort am ersten Tag! Juli = chinesische Sommerferien = Tickets sind schnell weg, besonders Soft Sleeper Kabinen.</div>
+
+  <div class="sub-title">Praktische Reise-Tipps</div>
+  <div class="info-grid section-anim">
+    <div class="info-card"><h4>Bargeld</h4><p>200–300 RMB (25–40 €) als Backup mitnehmen für Notfälle. Kleinere Orte, Taxifahrer und Märkte können manchmal nur cash. Geldautomaten in großen Städten vorhanden (UnionPay/Visa).</p></div>
+    <div class="info-card"><h4>Hitze im Juli</h4><p>Juli ist sehr heiß und feucht in China (30–38°C). <strong>Früh starten</strong> ist doppelt wichtig — nicht nur wegen Crowds, sondern auch wegen der Hitze. Mittags kurze Pause einplanen.</p></div>
+    <div class="info-card"><h4>Zugtickets</h4><p>Chinesische Hochgeschwindigkeitszüge sind sehr pünktlich, sauber und komfortabel. <strong>Pässe mitbringen</strong> — Ausländer müssen am Schalter den Passport vorzeigen um Tickets abzuholen (auch wenn online gekauft).</p></div>
+    <div class="info-card"><h4>SIM-Karte / eSIM</h4><p>China SIM oder internationale eSIM mit Datentarif kaufen. Empfehlung: <strong>Saily oder Trip.com eSIM</strong> — funktionieren mit VPN problemlos.</p></div>
+    <div class="info-card"><h4>Essen Budget</h4><p>China ist günstiger als erwartet. Lokale Restaurants: 5–15 RMB pro Gericht (1–2 €!). Touristen-Restaurants: 30–80 RMB. Streetfood: unvergesslich und günstig!</p></div>
+    <div class="info-card"><h4>Kommunikation</h4><p>In touristischen Städten sprechen viele Jüngere Grundenglisch. In Zhangjiajie und Chongqing weniger. Google Translate Kamera-Funktion ist täglich nützlich.</p></div>
+  </div>
+
+  <div class="note-box section-anim" style="margin-top:24px;">
+    <strong>Wichtigste Regel:</strong> Alipay und VPN VOR der Abreise einrichten! Beides funktioniert in China nur eingeschränkt wenn wir es dort zum ersten Mal versuchen. 30 Minuten Vorbereitung zuhause sparen uns stundenlangen Stress unterwegs.
+  </div>
+
+</div>
+</div>
+
+</main>
+
+<footer style="padding:0;text-align:left;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;padding:44px 48px 36px;">
+    <div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);">Route</div>
+      <div style="font-size:12px;color:var(--faint);line-height:2.0;">
+        London LHR<br>→ Peking PKX<br>→ Chengdu<br>→ Chongqing<br>→ Zhangjiajie<br>→ Shenzhen/HK<br>→ Shanghai PVG<br>→ Frankfurt FRA
+      </div>
+    </div>
+    <div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);">Zeitraum</div>
+      <div style="font-size:12px;color:var(--faint);line-height:2.0;">
+        12. – 31. Juli 2026<br>
+        20 Tage · 7 Städte<br>
+        18 Nächte<br>
+        Hinflug: 10h15<br>
+        Rückflug: 12h10
+      </div>
+    </div>
+    <div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);">Budget (p.P.)</div>
+      <div style="font-size:12px;color:var(--faint);line-height:2.0;">
+        Flüge + Bahn: 1.423 €<br>
+        Züge China: ~357 €<br>
+        Unterkunft: ~460 €<br>
+        Aktivitäten: ~160 €<br>
+        Essen etc.: ~500 €
+      </div>
+      <div style="margin-top:14px;font-family:&#39;Syne&#39;,sans-serif;font-size:20px;font-weight:800;color:var(--g1);letter-spacing:-0.02em;">~4.350 € zu zweit</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:2px;">~2.175 € pro Person</div>
+    </div>
+  </div>
+  <div style="border-top:1px solid var(--border);text-align:center;padding:18px 48px;font-size:11px;color:var(--faint);letter-spacing:0.06em;">
+    China Reise 2026 · 12.–31. Juli · London → Peking → ... → Shanghai → Frankfurt &nbsp;·&nbsp; <em style="color:var(--faint);">Será un viaje maravilloso</em>
+  </div>
+</footer>
+
+<script>
+function showPage(name){
+  const current = document.querySelector('.page.active');
+  if(current) current.classList.remove('active');
+  const next = document.getElementById('page-'+name);
+  if(next) next.classList.add('active');
+  document.querySelectorAll('.hero-tab,.stop-btn').forEach(b=>b.classList.remove('active'));
+  const idx={reiseplan:0,empfehlungen:1,budget:2,tipps:3};
+  if(idx[name]!==undefined){
+    document.querySelectorAll('.hero-tab')[idx[name]]?.classList.add('active');
+    document.querySelectorAll('.stop-btn')[idx[name]]?.classList.add('active');
+  }
+  const activePage=document.getElementById('page-'+name);
+  if(activePage){
+    const top=activePage.getBoundingClientRect().top+window.pageYOffset-20;
+    window.scrollTo({top:Math.max(0,top),behavior:'smooth'});
+  }
+}
+function toggleCard(id){document.getElementById(id).classList.toggle('open');}
+function toggleDay(id){document.getElementById(id).classList.toggle('open');}
+
+const io=new IntersectionObserver(e=>{
+  e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});
+},{threshold:0.06});
+document.querySelectorAll('.section-anim').forEach(s=>io.observe(s));
+
+// Counter animation
+function animateCounter(el){
+  const target=parseInt(el.dataset.target);
+  const prefix=el.dataset.prefix||'';
+  const suffix=el.dataset.suffix||'';
+  const steps=60;const duration=1200;
+  let step=0;
+  const timer=setInterval(()=>{
+    step++;
+    const current=Math.min(Math.round(target/steps*step),target);
+    el.textContent=prefix+(current>=1000?current.toLocaleString('de-DE'):current)+suffix;
+    if(step>=steps){clearInterval(timer);el.textContent=prefix+(target>=1000?target.toLocaleString('de-DE'):target)+suffix;}
+  },duration/steps);
+}
+const counterObs=new IntersectionObserver(e=>{
+  e.forEach(x=>{
+    if(x.isIntersecting){
+      x.target.querySelectorAll('.count-anim').forEach((el,i)=>setTimeout(()=>animateCounter(el),i*150));
+      counterObs.unobserve(x.target);
+    }
+  });
+},{threshold:0.5});
+const sr=document.querySelector('.hero-stats-row');
+if(sr)counterObs.observe(sr);
+</script>
+
+</body></html>
